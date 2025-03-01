@@ -1,0 +1,29 @@
+public class Estudiante {
+    // Atributos de la clase
+    private String nombre;
+    private int edad;
+    private String curso;
+
+    // Constructor de la clase
+    public Estudiante(String nombre, int edad, String curso) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.curso = curso;
+    }
+
+    // Método presentarse()
+    public void presentarse() {
+        System.out.println("Hola, soy " + nombre + " y tengo " + edad + " años. Estoy en el curso " + curso + ".");
+    }
+
+    // Método principal para probar la clase
+    public static void main(String[] args) {
+        // Crear instancias de la clase Estudiante
+        Estudiante estudiante1 = new Estudiante("Carlos", 15, "Matemáticas");
+        Estudiante estudiante2 = new Estudiante("Ana", 14, "Inglés");
+
+        // Llamar al método presentarse() en cada instancia
+        estudiante1.presentarse();
+        estudiante2.presentarse();
+    }
+}
